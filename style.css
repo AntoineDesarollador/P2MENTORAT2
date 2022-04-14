@@ -16,9 +16,18 @@ body {
 
 h1 {
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     font-weight: bold;
+}
 
+h2 {
+    margin: 10px 90px 10px 10px;
+    font-size: 21px;
+}
+
+#bloc-page {
+    margin: 10px 30px;
 }
 
 /* HEADER */
@@ -27,17 +36,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 40px;
 }
 
 nav img {
-    height: 80px;
-    margin-left: 30px;
+    height: 45px;
+    margin-left: 23px;
+    margin-top: 3px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin-top: 0px;
 }
 
 nav li {
@@ -52,12 +63,13 @@ nav li a {
     text-decoration: none;
     font-size: 17px;
     color: black;
+    margin-right: 20px;
 }
 
 nav li a:focus {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    border-top: 5px solid #0065FC;
+    padding-top: 25px;
 
 }
 
@@ -68,26 +80,34 @@ nav li a:focus {
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
+}
 
+#logement h1 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    margin-left: 0px;
 }
 
 #logement p {
     font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
 }
 
 #formulaire_1 {
     display: flex;
+    height: 50px;
 
 }
 
 #formulaire_1 svg {
     background-color: #f2f2f2;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    height: 50px;
+    width: 20px;
+    padding: 0px 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     margin-right: 0px;
 }
 
@@ -96,17 +116,19 @@ nav li a:focus {
     background: #0065FC;
     color: white;
     font-weight: bold;
-    font-size: 10px;
-    padding: 7px 7px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
+    font-size: 17px;
+    padding: 12px 12px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #recherche {
     padding: 0px;
     padding-left: 10px;
+    /* padding-right: 5px; */
     border: 1px solid #f2f2f2;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 #formulaire_1 .svg_1 {
@@ -119,11 +141,19 @@ nav li a:focus {
 h4 {
     font-size: 20px;
     font-weight: bold;
+    margin-right: 30px;
 }
 
 .filter {
     text-decoration: none;
     color: black;
+    margin-right: 30px;
+    /* padding-left: 0px; */
+    /* padding: 0px; */
+    border: 2px solid rgb(236, 236, 236);
+    border-left: none;
+    border-top-left-radius: none;
+    border-radius: 30px;
 }
 
 .filter:hover {
@@ -141,6 +171,7 @@ h4 {
 #filtres {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .filtres {
@@ -161,13 +192,14 @@ h4 {
 
 
 .filtres p {
-    border: 1px solid #e2e2e2;
-    border-left: none;
+
+    /* border-left: none; */
+    margin: 5px;
     font-weight: bold;
-    font-size: 12px;
-    padding: 10px 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    font-size: 17px;
+    padding: 0px 10px 0px 3px;
+    /* border-top-right-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
     position: relative;
     left: 5px;
 }
@@ -177,10 +209,8 @@ h4 {
     background-color: #DEEBFF;
     padding: 14px;
     border-radius: 50px;
-    position: relative;
-    left: 15px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 19px;
     color: #0065FC;
 }
 
@@ -190,6 +220,7 @@ h4 {
 #index {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 
@@ -201,7 +232,7 @@ h4 {
 }
 
 #index p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* hébergement */
@@ -224,9 +255,9 @@ h4 {
     display: flex;
     margin-right: 30px;
     flex-direction: column;
-    background-color: #f2f2f2;
-    padding: 20px 10px 40px 30px;
-    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+    padding: 20px 0px 40px 10px;
+    border-radius: 20px;
     height: 100%;
 
 }
@@ -243,7 +274,7 @@ h4 {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-right: 40px;
     margin-top: 10px;
     padding: 5px;
@@ -258,11 +289,12 @@ h4 {
 
 .hotel .name {
     font-weight: bold;
+    font-size: 15px;
 }
 
 #hébergement .hotel img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-bottom: 5px;
     height: 113.33px;
     width: 100%;
@@ -295,17 +327,24 @@ h4 {
 #hébergement aside {
     background-color: #f2f2f2;
     width: 420px;
-    padding: 20px 30px 40px 30px;
+    padding: 20px 20px 30px 20px;
     border-radius: 10px;
     height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #hébergement .aside_titre {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
     padding: 2px;
+}
+
+#hébergement .aside_titre svg {
+    margin-right: 30px;
 }
 
 #hébergement .hotel_populaire {
@@ -313,11 +352,11 @@ h4 {
     flex-direction: column;
     background-color: white;
     padding: 3px 5px 0px 5px;
-    border-radius: 10px;
-    margin: 30px 3px 30px 3px;
-    box-shadow: 2px 2px 10px grey;
-    width: 343px;
-    height: 147px;
+    border-radius: 20px;
+    margin: 30px 0px;
+    box-shadow: 1px 1px 10px grey;
+    width: 313px;
+    height: 143px;
 }
 
 
@@ -327,20 +366,21 @@ h4 {
 }
 
 #hébergement .img_aside {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 100%;
-    height: 144px;
+    height: 140px;
     object-fit: cover;
 }
 
 #hébergement .paragraphe {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
 #hébergement .paragraphe .STARS_1 {
     position: relative;
+    top: 20px;
     color: #0065FC;
     margin-top: 30px;
     margin-left: 2px;
@@ -353,14 +393,14 @@ h4 {
 
 #hébergement .paragraphe .name_aside {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 0px;
 }
 
 #hébergement .paragraphe p {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 
@@ -391,7 +431,7 @@ h4 {
     display: flex;
     flex-direction: column;
     margin-right: 55px;
-    box-shadow: 2px 2px 10px grey;
+    box-shadow: 2px 2px 10px #dadada;
     border-radius: 10px;
     width: 302px;
 }
@@ -421,7 +461,7 @@ h4 {
 }
 
 .bloc_activite_2 div {
-    box-shadow: 2px 2px 10px grey;
+    box-shadow: 2px 2px 10px #dadada;
     border-radius: 10px;
     width: 302px;
 
