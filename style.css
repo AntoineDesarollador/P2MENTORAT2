@@ -10,7 +10,7 @@
 body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
-    max-width: 1440px;
+    width: 1440px;
 }
 
 
@@ -24,6 +24,11 @@ h1 {
 h2 {
     margin: 10px 90px 10px 10px;
     font-size: 21px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #bloc-page {
@@ -259,7 +264,11 @@ h4 {
     padding: 20px 0px 40px 10px;
     border-radius: 20px;
     height: 100%;
+}
 
+#hebergement_1 h2 {
+    font-size: 23px;
+    padding-left: 25px;
 }
 
 .hebergement_2 {
@@ -343,9 +352,6 @@ h4 {
     padding: 2px;
 }
 
-#hébergement .aside_titre svg {
-    margin-right: 30px;
-}
 
 #hébergement .hotel_populaire {
     display: flex;
@@ -498,15 +504,16 @@ h4 {
 }
 
 #footer p {
-    font-size: 12px;
+    font-size: 17px;
 }
 
-/* TABLETTE */
+/* TABLETTE MODE PORTRAIT */
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
 
     body {
         max-width: 992px;
+        max-height: 1024px;
     }
 
     #bloc-page {
@@ -666,9 +673,9 @@ h4 {
     }
 
     #footer {
-        padding: 10px 30px;
+        padding: 10px 40px;
         display: flex;
-        width: 992px;
+        width: 100%;
     }
 
     #footer div {
@@ -677,20 +684,168 @@ h4 {
 
 }
 
+/* TABLETTE MODE PAYSAGE */
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+
+    body {
+        max-width: 1024px;
+        max-height: 768px;
+    }
+
+    #bloc-page {
+        width: 1024px;
+        height: 768px;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 23px;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin-top: 40px;
+        position: absolute;
+        right: -285px;
+    }
+
+    #hébergement {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+        margin-left: 20px;
+        height: 500px;
+    }
+
+    #hebergement_1 {
+        display: flex;
+        margin-right: 50px;
+        flex-direction: column;
+        background-color: rgb(242, 242, 242);
+        padding: 20px 0px 40px 10px;
+        border-radius: 50px;
+        height: 100%;
+        width: 944px;
+    }
+
+    .hebergement_2 {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+
+    #hébergement aside {
+        background-color: #f2f2f2;
+        width: 500px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 50px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hébergement .aside_titre {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin-bottom: 10px; */
+        /* padding: 2px; */
+    }
+
+    #hébergement .hotel_populaire {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 3px 5px 0px 5px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        box-shadow: 1px 1px 10px grey;
+        width: 313px;
+        height: 143px;
+    }
+
+    #activite {
+        margin-top: 50px;
+        width: 1024px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc_activite_1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 55px;
+        box-shadow: 2px 2px 10px #dadada;
+        border-radius: 10px;
+        width: 302px;
+        height: 300px;
+    }
+
+    .bloc_activite_2 div p {
+        margin-top: 1px;
+        margin-left: 0px;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .bloc_activite_2 div {
+        box-shadow: 2px 2px 10px #dadada;
+        border-radius: 10px;
+        width: 292px;
+    }
+
+    .bloc_activite_2 img {
+        height: 100px;
+        width: 292px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+    }
+
+    #hebergement_1 .paragraphe_afficher {
+        margin-top: 10px;
+        margin-left: 30px;
+        font-size: 17px;
+    }
+
+    .activite_lieux {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    #footer {
+        display: none;
+    }
+}
+
 /*MOBILE*/
 
 @media only screen and (max-width: 768px) {
-
-    #bloc-page {
-        display: flex;
-        flex-direction: column;
-        max-width: 768px;
-    }
 
     body {
         display: flex;
         flex-direction: column;
         max-width: 768px;
+    }
+
+    #bloc-page {
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        margin-left: 0px;
     }
 
     nav {
@@ -794,10 +949,7 @@ h4 {
     /* FILTRES */
 
 
-    h4 {
-        font-size: 16px;
-        font-weight: bold;
-    }
+
 
     .main_filtres {
         margin-top: 10px;
@@ -808,8 +960,11 @@ h4 {
 
 
     #filtres {
+        flex-direction: column;
         display: flex;
-
+        flex-wrap: wrap;
+        width: 768px;
+        height: 300px;
     }
 
     .filtres {
