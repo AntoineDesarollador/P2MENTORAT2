@@ -509,7 +509,7 @@ h4 {
 
 /* TABLETTE MODE PORTRAIT */
 
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
     body {
         max-width: 992px;
@@ -833,25 +833,30 @@ h4 {
 
 /*MOBILE*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
 
     body {
         display: flex;
         flex-direction: column;
-        max-width: 768px;
+        max-width: 375px;
     }
 
     #bloc-page {
         display: flex;
         flex-direction: column;
-        max-width: 768px;
+        max-width: 375px;
         margin-left: 0px;
+    }
+
+    header {
+        width: 290px;
     }
 
     nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
 
     }
 
@@ -861,8 +866,7 @@ h4 {
 
     nav ul {
 
-
-        padding: 30px 40px 0px 40px;
+        padding: 20px 40px 0px 40px;
         display: flex;
         justify-content: center;
         border-bottom: 3px solid #f2f2f2;
@@ -875,9 +879,8 @@ h4 {
     }
 
     nav ul li a {
-        font-size: 25px;
+        font-size: 12px;
         padding-bottom: 30px;
-        width: 500px;
 
     }
 
@@ -893,21 +896,23 @@ h4 {
     #logement {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px;
+        margin: 0px;
         align-items: center;
+        width: 260px;
 
     }
 
     #logement h1 {
-        font-size: 45px;
-        text-align: center;
+        font-size: 17px;
+        margin-top: 0px;
+        margin-left: 10px;
+
     }
 
     #logement p {
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 35px;
-
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
 
     #formulaire_1 {
@@ -918,9 +923,11 @@ h4 {
     #formulaire_1 svg {
         background-color: #f2f2f2;
         padding: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        /* border-top-left-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
         margin-right: 0px;
+        width: 15px;
+        height: 15px;
     }
 
 
@@ -933,17 +940,22 @@ h4 {
         background: #0065FC;
         color: white;
         font-weight: bold;
-        font-size: 10px;
-        padding: 10px 10px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
+        /* font-size: 10px; */
+        padding: 10px;
+        border-radius: 10px;
+        height: 15px;
+        width: 15px;
+
     }
 
     #recherche {
-        padding: 0px;
+        padding: 4px;
         padding-left: 10px;
-        border: 2px solid #f2f2f2;
+        border: 1px solid #f2f2f2;
         border-right: none;
+        width: 140px;
+        font-size: 12px;
+        height: 25px;
     }
 
     /* FILTRES */
@@ -963,8 +975,21 @@ h4 {
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
-        width: 768px;
+        width: 260px;
         height: 300px;
+    }
+
+    .filter {
+        text-decoration: none;
+        color: black;
+        margin-right: 30px;
+        /* padding-left: 0px; */
+        padding: 0px;
+        border: 2px solid rgb(236, 236, 236);
+        border-left: none;
+        border-top-left-radius: none;
+        border-radius: 30px;
+        height: 40px;
     }
 
     .filtres {
@@ -978,7 +1003,7 @@ h4 {
     }
 
     .filtres p {
-        border: 1px solid #e2e2e2;
+
         border-left: none;
         font-weight: bold;
         font-size: 12px;
@@ -992,12 +1017,12 @@ h4 {
 
     .icone {
         background-color: #DEEBFF;
-        padding: 14px;
+        padding: 10px;
         border-radius: 50px;
         position: relative;
         left: 15px;
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
         color: #0065FC;
     }
 
