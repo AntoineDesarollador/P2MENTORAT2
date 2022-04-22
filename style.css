@@ -45,7 +45,7 @@ nav {
 }
 
 nav img {
-    height: 45px;
+    height: 55px;
     margin-left: 23px;
     margin-top: 3px;
 }
@@ -475,7 +475,6 @@ h4 {
 
 .bloc_activite_1 p {
     margin-top: 1px;
-
     padding: 10px;
     font-weight: bold;
 }
@@ -492,7 +491,7 @@ h4 {
 
 #footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     background: #f2f2f2 repeat-x;
     width: 1440px;
     padding: 10px 21px;
@@ -503,21 +502,30 @@ h4 {
     color: black;
 }
 
+#footer div {
+    margin-left: 55px;
+}
+
+
 #footer p {
     font-size: 17px;
+
 }
+
+
 
 /* TABLETTE MODE PORTRAIT */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     body {
-        max-width: 992px;
-        max-height: 1024px;
+        width: 100%;
+
     }
 
     #bloc-page {
-        max-width: 992px;
+        width: 100%;
+        margin: 0px;
     }
 
     h1 {
@@ -548,6 +556,17 @@ h4 {
         width: 992px;
     }
 
+    #hebergement_1 h2 {
+        font-size: 23px;
+        padding-left: 25px;
+        margin-top: 0px;
+    }
+
+    .hebergement_2 {
+        display: flex;
+        margin-top: 20px;
+    }
+
 
     .hebergement_2 .hotel {
         width: 350px;
@@ -562,7 +581,7 @@ h4 {
     #hébergement .afficher {
         margin-left: 25px;
         font-size: 12px;
-        border: 2px solid rgb(114, 114, 114);
+        border: 1px solid rgb(114, 114, 114);
         border-radius: 5px;
         padding: 5px;
     }
@@ -587,6 +606,7 @@ h4 {
 
     #hébergement #dimension {
         display: flex;
+        width: 100%;
     }
 
     #hébergement .paragraphe .STARS_1 {
@@ -604,9 +624,9 @@ h4 {
 
     #hébergement .hotel_populaire {
 
-        margin: 15px 30px 10px 30px;
+        margin: 15px 20px;
         box-shadow: 2px 2px 10px grey;
-        width: 350px;
+        width: 33%;
     }
 
     .STARS_1 {
@@ -673,7 +693,6 @@ h4 {
     }
 
     #footer {
-        padding: 10px 40px;
         display: flex;
         width: 100%;
     }
@@ -684,156 +703,10 @@ h4 {
 
 }
 
-/* TABLETTE MODE PAYSAGE */
-
-@media only screen and (min-width: 993px) and (max-width: 1024px) {
-
-    body {
-        max-width: 1024px;
-        max-height: 768px;
-    }
-
-    #bloc-page {
-        width: 1024px;
-        height: 768px;
-    }
-
-    header {
-        max-width: 100%;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 23px;
-
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin-top: 40px;
-        position: absolute;
-        right: -285px;
-    }
-
-    #hébergement {
-        display: flex;
-        flex-direction: row;
-        margin-top: 0px;
-        margin-left: 20px;
-        height: 500px;
-    }
-
-    #hebergement_1 {
-        display: flex;
-        margin-right: 50px;
-        flex-direction: column;
-        background-color: rgb(242, 242, 242);
-        padding: 20px 0px 40px 10px;
-        border-radius: 50px;
-        height: 100%;
-        width: 944px;
-    }
-
-    .hebergement_2 {
-        display: flex;
-        margin-left: 30px;
-        margin-top: 0px;
-    }
-
-    #hébergement aside {
-        background-color: #f2f2f2;
-        width: 500px;
-        padding: 10px 20px 10px 20px;
-        border-radius: 50px;
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #hébergement .aside_titre {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        /* margin-bottom: 10px; */
-        /* padding: 2px; */
-    }
-
-    #hébergement .hotel_populaire {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        padding: 3px 5px 0px 5px;
-        border-radius: 20px;
-        margin-top: 10px;
-        margin-bottom: 0;
-        box-shadow: 1px 1px 10px grey;
-        width: 313px;
-        height: 143px;
-    }
-
-    #activite {
-        margin-top: 50px;
-        width: 1024px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bloc_activite_1 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 55px;
-        box-shadow: 2px 2px 10px #dadada;
-        border-radius: 10px;
-        width: 302px;
-        height: 300px;
-    }
-
-    .bloc_activite_2 div p {
-        margin-top: 1px;
-        margin-left: 0px;
-        padding: 5px;
-        font-weight: bold;
-    }
-
-    .bloc_activite_2 div {
-        box-shadow: 2px 2px 10px #dadada;
-        border-radius: 10px;
-        width: 292px;
-    }
-
-    .bloc_activite_2 img {
-        height: 100px;
-        width: 292px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        object-fit: cover;
-    }
-
-    #hebergement_1 .paragraphe_afficher {
-        margin-top: 10px;
-        margin-left: 30px;
-        font-size: 17px;
-    }
-
-    .activite_lieux {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5px;
-        margin-left: 10px;
-    }
-
-    #footer {
-        display: none;
-    }
-}
 
 /*MOBILE*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767px) {
 
     body {
         display: flex;
@@ -841,15 +714,29 @@ h4 {
         max-width: 375px;
     }
 
+    h1 {
+        margin-bottom: 0px;
+        margin-left: 20px;
+        font-weight: bold;
+        margin: 0px 20px;
+    }
+
     #bloc-page {
         display: flex;
         flex-direction: column;
-        max-width: 375px;
+        width: 100%;
         margin-left: 0px;
     }
 
     header {
-        width: 290px;
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 0px;
+        width: 60%;
     }
 
     nav {
@@ -857,6 +744,7 @@ h4 {
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        margin: 0px;
 
     }
 
@@ -865,26 +753,24 @@ h4 {
     }
 
     nav ul {
-
-        padding: 20px 40px 0px 40px;
-        display: flex;
+        margin-top: 10px;
         justify-content: center;
-        border-bottom: 3px solid #f2f2f2;
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        border-bottom: 4px solid #f2f2f2;
     }
 
     nav ul li {
-        padding-bottom: 30px;
-        margin-right: 50px;
-        margin-left: 50px;
+        padding-bottom: 20px;
+        margin-top: 20px;
     }
 
     nav ul li a {
-        font-size: 12px;
-        padding-bottom: 30px;
-
+        font-size: 17px;
     }
 
-    nav ul li a:focus {
+    nav ul li a:active {
         border-bottom: 3px solid #0065FC;
         padding: 30px 40px 0px 40px;
     }
@@ -897,37 +783,42 @@ h4 {
         display: flex;
         flex-direction: column;
         margin: 0px;
-        align-items: center;
-        width: 260px;
+        /* align-items: center; */
+        width: 100%;
 
     }
 
     #logement h1 {
-        font-size: 17px;
+        font-size: 25px;
         margin-top: 0px;
-        margin-left: 10px;
+        width: 95%;
+        margin: 10px;
+        text-align: center;
 
     }
 
     #logement p {
-        font-size: 12px;
+        font-size: 18px;
         margin-top: 15px;
         margin-bottom: 25px;
+        text-align: center;
     }
 
     #formulaire_1 {
         display: flex;
+        width: 100%;
+        justify-content: center;
 
     }
 
     #formulaire_1 svg {
         background-color: #f2f2f2;
-        padding: 10px;
-        /* border-top-left-radius: 10px; */
-        /* border-bottom-left-radius: 10px; */
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         margin-right: 0px;
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 35%;
     }
 
 
@@ -939,26 +830,30 @@ h4 {
         display: flex;
         background: #0065FC;
         color: white;
-        font-weight: bold;
-        /* font-size: 10px; */
-        padding: 10px;
-        border-radius: 10px;
-        height: 15px;
-        width: 15px;
-
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+        right: 13px;
+        width: 20px;
+        height: 35%;
+        border-radius: 15px;
     }
 
     #recherche {
-        padding: 4px;
+        padding: 0;
+        height: 100%;
         padding-left: 10px;
         border: 1px solid #f2f2f2;
         border-right: none;
-        width: 140px;
-        font-size: 12px;
-        height: 25px;
+        width: 50%;
+        font-size: 15px;
+        height: 90%;
+
     }
 
     /* FILTRES */
+
 
 
 
@@ -967,62 +862,63 @@ h4 {
         margin-top: 10px;
         margin-left: 10px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+
     }
 
 
     #filtres {
-        flex-direction: column;
+        justify-content: flex-start;
         display: flex;
         flex-wrap: wrap;
-        width: 260px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
     }
 
     .filter {
-        text-decoration: none;
-        color: black;
-        margin-right: 30px;
-        /* padding-left: 0px; */
+
+        margin-right: 10px;
         padding: 0px;
-        border: 2px solid rgb(236, 236, 236);
+        border: none;
         border-left: none;
-        border-top-left-radius: none;
-        border-radius: 30px;
-        height: 40px;
+        border-radius: 50px;
+        margin-top: 10px;
     }
 
     .filtres {
 
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        margin-right: 5px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 1px solid rgb(215 215 215);
+        border-left: none;
+        border-radius: 30px;
 
     }
 
     .filtres p {
 
-        border-left: none;
         font-weight: bold;
-        font-size: 12px;
-        padding: 10px 20px;
+        font-size: 17px;
+        padding: 4px 8px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        /* border: 2px solid grey; */
+        border-left: none;
         position: relative;
-        left: 5px;
+        left: -5px;
     }
 
 
     .icone {
         background-color: #DEEBFF;
-        padding: 10px;
+        padding: 15px;
         border-radius: 50px;
         position: relative;
-        left: 15px;
-        width: 15px;
-        height: 15px;
+        left: -3px;
+        width: 25px;
+        height: 25px;
         color: #0065FC;
     }
 
@@ -1041,7 +937,8 @@ h4 {
     }
 
     #index p {
-        font-size: 15px;
+        font-size: 17px;
+        margin-top: 30px;
     }
 
     /* hébergement */
@@ -1051,44 +948,47 @@ h4 {
         display: flex;
         flex-direction: column-reverse;
         margin-top: 10px;
-        margin-left: 20px;
-        width: 650px;
+        margin-left: 0;
+        width: 100%;
     }
-
-
 
 
     #hebergement_1 {
         display: flex;
-        margin-right: 30px;
+        margin-right: 0;
+        padding-left: 0px;
         flex-direction: column;
         background-color: #ffffff;
-        padding: 20px 5px 40px 30px;
         border-radius: 10px;
-        height: 100%;
-        width: 710px;
+        width: 100%;
+    }
 
+    #hebergement_1 h2 {
+        font-size: 23px;
+        padding-left: 0;
+        margin: 10px 0px;
+        width: 100%;
     }
 
     .hebergement_2 {
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
-        margin-top: 20px;
-        width: 650px;
+        margin-left: 15px;
+        margin-top: 0px;
+        width: 95%;
     }
 
 
 
     .hebergement_2 .hotel {
-        width: 600px;
-        height: 250px;
+        width: 90%;
+        height: 30%;
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
-        border-radius: 10px;
-        margin-right: 40px;
-        margin-top: 20px;
+        border-radius: 20px;
+        /* margin-right: 40px; */
+        margin: 10px 0px;
         padding: 5px;
         box-shadow: 2px 2px 10px grey;
     }
@@ -1101,16 +1001,17 @@ h4 {
 
     .hotel .name {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     #hébergement .hotel img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         margin-bottom: 5px;
-        height: 157px;
+        height: 117px;
         width: 100%;
         object-fit: cover;
+
     }
 
 
@@ -1134,27 +1035,37 @@ h4 {
     }
 
     #hebergement_1 .paragraphe_afficher {
-        margin-top: 40px;
-        margin-left: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
         margin-bottom: 0px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     /* ASIDE */
 
     #hébergement aside {
         background-color: #f2f2f2;
-        width: 650px;
-        padding: 20px 30px 20px 30px;
-        border-radius: 10px;
-        height: 620px;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        border-radius: 0px;
+    }
+
+    #hébergement aside h2 {
+        margin: 10px 90px 10px 10px;
+        font-size: 25px;
     }
 
     #hébergement .aside_titre {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #hébergement .aside_titre svg {
+        height: 30px;
+        color: black;
     }
 
     #hébergement .hotel_populaire {
@@ -1162,10 +1073,10 @@ h4 {
         flex-direction: column;
         background-color: white;
         padding: 3px 5px 0px 5px;
-        border-radius: 10px;
-        margin: 20px 3px 30px 3px;
+        border-radius: 20px;
+        margin: 20px auto;
         box-shadow: 2px 2px 10px grey;
-        width: 600px;
+        width: 90%;
         height: 160px;
     }
 
@@ -1176,9 +1087,10 @@ h4 {
     }
 
     #hébergement .img_aside {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         width: 100%;
+        /* border-radius: 20px; */
         height: 157px;
         object-fit: cover;
     }
@@ -1223,43 +1135,41 @@ h4 {
     #activite {
         display: flex;
         flex-direction: column;
-        width: 650px;
-        height: 1600px;
+        width: 100%;
+        padding: 0px;
+        /* height: 1600px; */
         margin-bottom: 30px;
-        margin-left: 40px;
+        margin-left: 0;
 
-        padding: 10px 0px 20px 0px;
     }
 
     .activite_lieux {
         display: flex;
         flex-direction: column;
-
         margin-top: 20px;
-        margin-left: 10px;
-        height: 840px;
-        width: 650px;
+        margin-left: 0;
+        /* height: 840px; */
+        width: 100%;
     }
 
 
 
     .bloc_activite_1 {
-        width: 600px;
-        height: 250px;
+        width: 90%;
+        height: 20%;
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
-        border-radius: 10px;
-        margin-right: 40px;
-        margin-top: 40px;
-        box-shadow: 2px 2px 10px grey;
+        border-radius: 20px;
+        /* margin-right: 0; */
+        margin: 40px auto;
+        box-shadow: 2px 2px 10px #e2e1e1;
 
     }
 
     .bloc_activite_1 img {
-
         height: 157px;
-        width: 600px;
+        width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
@@ -1276,7 +1186,7 @@ h4 {
     .bloc_activite_2 img {
 
         height: 157px;
-        width: 600px;
+        width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
@@ -1284,23 +1194,21 @@ h4 {
 
     .bloc_activite_2 {
 
-        width: 600px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
         border-radius: 10px;
         margin-right: 40px;
         margin-top: 10px;
-
     }
 
     .bloc_activite_2 div {
-        box-shadow: 2px 2px 10px grey;
-        border-radius: 10px;
-        width: 600px;
-        margin-top: 30px;
-
-
+        box-shadow: 2px 2px 10px #e2e2e2;
+        box-shadow: 2px 2px 10px #e2e2e2;
+        border-radius: 20px;
+        width: 90%;
+        margin: 30px auto;
     }
 
     .bloc_activite_1 p {
@@ -1323,13 +1231,16 @@ h4 {
     #footer {
 
         background: #f2f2f2;
-        width: 767px;
+        width: 100%;
         padding: 0px;
+        display: flex;
+        flex-direction: column;
     }
 
     #footer a {
         text-decoration: none;
         color: black;
+        font-size: 17px;
     }
 
     #footer p {
