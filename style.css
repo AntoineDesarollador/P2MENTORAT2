@@ -6,11 +6,9 @@
 
 
 
-
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0px;
-    width: 100%;
+    margin: 0;
 }
 
 
@@ -37,6 +35,9 @@ h4 {
 }
 
 /* HEADER */
+
+
+
 
 nav {
     display: flex;
@@ -266,8 +267,8 @@ h4 {
 #hébergement {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 100%;
+    margin: 10px auto;
 }
 
 .lien_carte {
@@ -278,7 +279,7 @@ h4 {
 
 #hebergement_1 {
     display: flex;
-    margin-right: 40px;
+    margin: auto;
     flex-direction: column;
     background-color: rgb(242, 242, 242);
     padding: 20px 0px 40px 10px;
@@ -353,6 +354,10 @@ h4 {
 }
 
 /* ASIDE */
+
+aside {
+    margin: auto;
+}
 
 #hébergement aside {
     background-color: #f2f2f2;
@@ -537,13 +542,12 @@ h4 {
 
 
 
-/* TABLETTE MODE PORTRAIT */
+/* TABLETTE  */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     body {
         width: 100%;
-        height: 3990px;
 
     }
 
@@ -827,297 +831,6 @@ h4 {
 }
 
 
-
-
-/* TABLETTE MODE PORTRAIT */
-
-@media only screen and (min-width: 1024px) {
-
-    body {
-        width: 100%;
-
-    }
-
-    #bloc-page {
-        width: 100%;
-        margin: 0px;
-    }
-
-    h1 {
-        margin-left: 20px;
-        width: 90%;
-    }
-
-    h2 {
-        margin: 10px 30px;
-        font-size: 21px;
-    }
-
-    h4 {
-        font-size: 20px;
-        width: 10%;
-        font-weight: bold;
-        margin-right: 0;
-    }
-
-    #logement h1 {
-        margin-left: 0px;
-    }
-
-    #filtres {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 5px;
-        width: 85%;
-    }
-
-    .filter {
-        text-decoration: none;
-        color: black;
-        margin-right: 20px;
-        margin-top: 10px;
-        /* padding-left: 0px; */
-        /* padding: 0px; */
-        border: 2px solid rgb(236, 236, 236);
-        border-left: none;
-        border-top-left-radius: none;
-        border-radius: 30px;
-    }
-
-    .main_filtres {
-        margin: 10px 10px;
-        /* margin-left: 30px; */
-        display: flex;
-        flex-wrap: wrap;
-        width: 95%;
-    }
-
-    #logement {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 20px;
-    }
-
-
-    #hébergement {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100%;
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 0;
-    }
-
-    #hébergement .aside_titre {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 10px;
-        padding: 0px;
-        width: 100%;
-    }
-
-    #hébergement .img_aside {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    #hébergement .hotel img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin-bottom: 5px;
-        height: 113.33px;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    #hébergement .hotel_aside {
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-    }
-
-    #hébergement aside {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        padding: 0px 0px 0px 0px;
-        margin-bottom: 20px;
-        border-radius: 0px;
-        background-color: white;
-    }
-
-
-
-    .lien_carte {
-        text-decoration: none;
-        color: black;
-        height: 100%;
-    }
-
-    #hebergement_1 {
-        display: flex;
-        background-color: white;
-        padding: 15px 0px;
-        border-radius: 0px;
-        height: 100%;
-        width: 100%;
-    }
-
-    #hebergement_1 h2 {
-        font-size: 23px;
-        padding-left: 25px;
-        margin-top: 0px;
-    }
-
-    .hebergement_2 {
-        display: flex;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-
-
-    .hebergement_2 .hotel {
-
-        width: 100%;
-        display: flex;
-        background-color: white;
-        border-radius: 10px;
-        margin: 20px 20px;
-        padding: 0px;
-        box-shadow: 2px 2px 10px grey;
-
-    }
-
-    #hébergement .afficher {
-        margin-left: 25px;
-        font-size: 12px;
-        border: 1px solid rgb(114, 114, 114);
-        border-radius: 5px;
-        padding: 5px;
-    }
-
-    #hebergement_1 .paragraphe_afficher {
-        margin-top: 5px;
-        margin-left: 30px;
-        font-size: 17px;
-    }
-
-
-
-
-    #hébergement #dimension {
-        display: flex;
-        width: 100%;
-    }
-
-    #hébergement .paragraphe .STARS_1 {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-    }
-
-    #hébergement .paragraphe {
-        width: 150px;
-    }
-
-    #hébergement .aside_titre svg {
-        display: none;
-    }
-
-    #hébergement .hotel_populaire {
-
-        margin: 15px 10px;
-        box-shadow: 2px 2px 10px grey;
-        width: 33%;
-        padding: 0px;
-    }
-
-    .STARS_1 {
-        position: relative;
-        bottom: 20px;
-    }
-
-
-
-    #activite {
-        margin: 20px 0px;
-        padding: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #activite .activite_lieux {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 0px;
-        width: 100%;
-    }
-
-    #activite .bloc_activite_1 img {
-        width: 100%;
-        height: 250px;
-        display: flex;
-    }
-
-    #activite .bloc_activite_1 {
-        width: 90%;
-        display: flex;
-        order: 2;
-        margin: 0px auto;
-    }
-
-    #activite .bloc_activite_2 {
-        width: 98%;
-        flex-wrap: wrap;
-        display: flex;
-        order: 2;
-        margin: 0px auto;
-    }
-
-    .activite_lieux .ile_du_frioul,
-    .Parc_longchamp {
-        position: relative;
-        bottom: 0px;
-    }
-
-    .bloc_activite_2 div {
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        margin: 30px 30px;
-        box-shadow: 2px 2px 10px grey;
-        border-radius: 10px;
-    }
-
-    .bloc_activite_2 div img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-
-    #footer {
-        display: flex;
-        width: 100%;
-        position: absolute;
-    }
-
-    #footer div {
-        margin: 50px;
-    }
-
-}
-
-
-
 /*MOBILE*/
 
 @media only screen and (max-width: 767px) {
@@ -1151,6 +864,7 @@ h4 {
         font-weight: bold;
         margin-right: 0px;
         width: 60%;
+        margin-bottom: 10px;
     }
 
     nav {
@@ -1167,7 +881,7 @@ h4 {
     }
 
     nav ul {
-        margin-top: 10px;
+        margin: 10px;
         justify-content: center;
         padding-left: 0;
         width: 100%;
