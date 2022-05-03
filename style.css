@@ -9,6 +9,10 @@
 body {
     font-family: "Raleway", sans-serif;
     margin: 0 auto;
+
+}
+
+#bloc-page {
     max-width: 1340px;
 }
 
@@ -1104,6 +1108,10 @@ footer {
         flex-direction: column-reverse;
         margin-top: 10px;
         margin-left: 0;
+        width: 100%;
+    }
+
+    #hébergement #dimension {
         width: 100%;
     }
 
