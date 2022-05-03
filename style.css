@@ -8,7 +8,8 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1340px;
 }
 
 
@@ -131,6 +132,10 @@ nav li a:focus {
     border-bottom-right-radius: 20px;
 }
 
+#recherche span {
+    vertical-align: middle;
+}
+
 #recherche {
     padding: auto;
     padding-left: 15px;
@@ -173,6 +178,7 @@ h4 {
 .filter:hover {
     color: #0065FC;
     border: 2px solid #0065FC;
+    border-left: none;
 }
 
 .filter p:hover {
@@ -212,9 +218,6 @@ h4 {
     flex-direction: row;
     margin-right: 10px;
 }
-
-
-
 
 
 .filtres p {
@@ -387,7 +390,7 @@ aside {
     border-radius: 20px;
     margin: 35px 0px;
     box-shadow: 1px 1px 10px grey;
-    width: 313px;
+    max-width: 313px;
     height: 143px;
 }
 
@@ -462,25 +465,39 @@ aside {
 .bloc_activite_1 {
     display: flex;
     flex-direction: column;
-    margin-right: 55px;
+    margin-right: 35px;
     box-shadow: 2px 2px 10px #dadada;
     border-radius: 10px;
-    width: 302px;
+    width: 25%;
 }
 
 .bloc_activite_1 img {
 
     height: 100%;
-    width: 302px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.bloc_activite_1 a {
+    height: calc(100% - 40px);
+}
+
+
+
+
+.bloc_activite_1 p {
+    margin-top: 1px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 
 .bloc_activite_2 img {
 
     height: 113.33px;
-    width: 302px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
@@ -488,22 +505,17 @@ aside {
 
 .bloc_activite_2 {
     justify-content: space-between;
-    margin-right: 65px;
+    margin-right: 35px;
+    width: 20%;
 
 }
 
 .bloc_activite_2 div {
     box-shadow: 2px 2px 10px #dadada;
     border-radius: 10px;
-    width: 302px;
-
+    width: 100%;
 }
 
-.bloc_activite_1 p {
-    margin-top: 1px;
-    padding: 10px;
-    font-weight: bold;
-}
 
 
 .bloc_activite_2 div p {
@@ -513,13 +525,17 @@ aside {
     font-weight: bold;
 }
 
+
 /* FOOTER */
+
+footer {
+    background: #f2f2f2;
+}
 
 #footer {
     display: flex;
     justify-content: flex-start;
-    background: #f2f2f2 repeat-x;
-    width: 100%;
+    max-width: 1500px;
 
 }
 
@@ -596,6 +612,20 @@ aside {
         border-left: none;
         border-top-left-radius: none;
         border-radius: 30px;
+    }
+
+
+    .filter:hover {
+        display: none;
+    }
+
+    .filter p:hover {
+
+        display: none;
+    }
+
+    .filter:focus {
+        display: none;
     }
 
     .main_filtres {
